@@ -26,14 +26,25 @@ function yourPassword() {
   var passwordText = document.querySelector("#password");
   // console.log ('running generate password');
   var password = '';
-  for (let i = 0; i < array.length; i++) {
-    choices = array[i];
+  var possibleChoices = []
+  if (choices.addUpperCase) {
+    possibleChoices = possibleChoices.concat(upperCase);
+  }
+  if (choices.addLowerCase) {
+    possibleChoices = possibleChoices.concat(lowerCase);
+  }
+  if (choices.addSpecialChar) {
+    possibleChoices = possibleChoices.concat(specialChar);
+  }
+  if (choices.addNumbers) {
+    possibleChoices = possibleChoices.concat(numbers);
+  }
 
+  for (let i = 0; i < choices.charLength; i++) {
+    var randomindex = Math.floor(Math.random() * possibleChoices.charlength);
+       return array[randomindex];          
   }
-  for(var i = 0; i <= charLength; i++){
-    password = password + (Math.floor(Math.random() * choices.charLength)); 
-  }
-  passwordText.value = password;
+  return password;
 }
 function promts() {
 
@@ -41,19 +52,20 @@ function promts() {
    if (charLength < 8 || charLength > 128) {
    alert('Reminder, Character length must be a number between 8-128');
 
-   promts();
+     promts();
+     return;
    }
   
-  if(confirm("Would you like upper case letters?") == true); {
+  if(confirm("Would you like upper case letters?") == true) {
     choices.addUpperCase = true;
   } 
-  if(confirm("Would you like lower case letters?") == true); {
+  if(confirm("Would you like lower case letters?") == true) {
     choices.addLowerCase = true;
   } 
-  if(confirm("Would you like special characters?") == true); {
+  if(confirm("Would you like special characters?") == true) {
     choices.addSpecialChar = true;
   }
-  if(confirm("Would you like numbers?") == true); {
+  if(confirm("Would you like numbers?") == true) {
     choices.addNumbers = true;
   }
   
