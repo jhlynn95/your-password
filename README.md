@@ -1,5 +1,7 @@
 # Your-password
 
+
+
 ## Description
 
 * In this project I applied skills that I have learned class, and outside reading.
@@ -8,10 +10,10 @@
 
 ## Tools Used
 * Javascript
-* Using math floor
+* Using math floor & connecting it to my arrays to generate a random password
 * 'if' statements
 * W3schools using alerts https://www.w3schools.com/jsref/met_win_alert.asp
-* Using arrays
+* using concat to append my string to the end of another string
 
 ## URL 
 * 
