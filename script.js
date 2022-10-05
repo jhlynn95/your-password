@@ -16,10 +16,9 @@ var choices = {
 var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", yourPassword);
 // Write password to the #password input
-function yourPassword() {
+ function yourPassword() {
   var okPromts = promts()
   // var password = generatePassword();
-
 }
 
  function generatePassword() {
