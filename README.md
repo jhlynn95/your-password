@@ -1,4 +1,5 @@
 # Your-password
+[Untitled_ Oct 4, 2022 9_40 PM.webm](https://user-images.githubusercontent.com/109389786/193983489-9bb7083c-fd23-46ff-bcba-40bd6f444323.webm)
 
 
 
@@ -16,8 +17,8 @@
 * using concat to append my string to the end of another string
 
 ## URL 
-* https://github.com/jhlynn95/your-password
-* 
+* https://jhlynn95.github.io/your-password/ -url
+* https://github.com/jhlynn95/your-password - github
 
 ## MIT License
 
