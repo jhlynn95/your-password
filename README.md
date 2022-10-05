@@ -17,8 +17,8 @@
 * using concat to append my string to the end of another string
 
 ## URL 
-* https://jhlynn95.github.io/your-password/
-* 
+* https://jhlynn95.github.io/your-password/ -url
+* https://github.com/jhlynn95/your-password - github
 
 ## MIT License
 
