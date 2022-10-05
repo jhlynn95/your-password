@@ -25,7 +25,7 @@ function yourPassword() {
  function generatePassword() {
   var passwordText = document.querySelector("#password");
   // console.log ('running generate password');
-  var password = '';
+  var password = ''
   var possibleChoices = []
   if (choices.addUpperCase) {
     possibleChoices = possibleChoices.concat(upperCase);
@@ -39,16 +39,17 @@ function yourPassword() {
   if (choices.addNumbers) {
     possibleChoices = possibleChoices.concat(numbers);
   }
-
-  for (let i = 0; i < choices.charLength; i++) {
-    var randomindex = Math.floor(Math.random() * possibleChoices.charlength);
-       return array[randomindex];          
+  // console.log(possibleChoices.charLength, typeof possibleChoices.charLength)
+  for (let i = 0; i < charLength; i++) {
+    var randomindex = Math.floor(Math.random() * possibleChoices.length);
+    console.log(randomindex)
+     password += possibleChoices[randomindex]           
   }
-  return password;
+  passwordText.value = password;
 }
 function promts() {
 
-  var charLength = prompt('Choose how long you would like your password to be, must be between 8-128 characters');
+  charLength = parseInt(prompt('Choose how long you would like your password to be, must be between 8-128 characters'));
    if (charLength < 8 || charLength > 128) {
    alert('Reminder, Character length must be a number between 8-128');
 
@@ -71,7 +72,5 @@ function promts() {
   
    console.log(choices);
    generatePassword();
-// Add event listener to generate button
-//  var password = generatePassword();
-  // return ;
+
 }
